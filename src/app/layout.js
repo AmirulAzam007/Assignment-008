@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar></Navbar>
-        {children}
+        <main className="">
+          {children}
+        </main>
         <Footer></Footer>
         </body>
     </html>
