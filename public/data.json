@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/example-course1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Modern Frontend Dev",
+    "instructor": "Sarah Ahmed",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master HTML, CSS, JavaScript, and React.",
+    "image": "https://i.postimg.cc/example-course2.png",
+    "category": "Frontend"
+  },
+  {
+    "id": 3,
+    "title": "Advanced Next.js",
+    "instructor": "Michael Lee",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Build scalable and production-ready Next.js apps.",
+    "image": "https://i.postimg.cc/example-course3.png",
+    "category": "Next.js"
+  },
+  {
+    "id": 4,
+    "title": "JavaScript Essentials",
+    "instructor": "Emily Clark",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Understand core JavaScript concepts with projects.",
+    "image": "https://i.postimg.cc/example-course4.png",
+    "category": "JavaScript"
+  },
+  {
+    "id": 5,
+    "title": "React for Beginners",
+    "instructor": "David Miller",
+    "duration": "14 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Create dynamic user interfaces using React.",
+    "image": "https://i.postimg.cc/example-course5.png",
+    "category": "React"
+  },
+  {
+    "id": 6,
+    "title": "Node.js API Mastery",
+    "instructor": "Sophia Wilson",
+    "duration": "16 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Develop REST APIs with Node.js and Express.",
+    "image": "https://i.postimg.cc/example-course6.png",
+    "category": "Backend"
+  },
+  {
+    "id": 7,
+    "title": "UI/UX Design Basics",
+    "instructor": "Chris Evans",
+    "duration": "10 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn modern UI/UX principles for web apps.",
+    "image": "https://i.postimg.cc/example-course7.png",
+    "category": "Design"
+  },
+  {
+    "id": 8,
+    "title": "MongoDB & Database",
+    "instructor": "Olivia Brown",
+    "duration": "13 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Learn MongoDB database design and integration.",
+    "image": "https://i.postimg.cc/example-course8.png",
+    "category": "Database"
+  }
+]
