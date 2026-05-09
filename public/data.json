@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/web-dev.jpeg",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Master HTML, CSS, JavaScript, and React.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/front-dev.webp",
     "category": "Frontend"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Build scalable and production-ready Next.js apps.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/next-js.webp",
     "category": "Next.js"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Understand core JavaScript concepts with projects.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/javascript.jpg",
     "category": "JavaScript"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Create dynamic user interfaces using React.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/React.png",
     "category": "React"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Develop REST APIs with Node.js and Express.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/node-js.png",
     "category": "Backend"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Learn modern UI/UX principles for web apps.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/ui.jpg",
     "category": "Design"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.6,
     "level": "Intermediate",
     "description": "Learn MongoDB database design and integration.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "image": "/Assets/mongo.png",
     "category": "Database"
   }
 ]
