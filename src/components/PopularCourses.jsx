@@ -13,9 +13,9 @@ const PopularCourses = async () => {
     return (
         <div>
             
-            <h1 className='text-2xl font-bold mt-5'>Popular Courses</h1>
+            <h1 className='text-2xl font-bold mt-5 pb-5'>Popular Courses</h1>
 
-            <div>
+            <div className='grid grid-cols-3 gap-5 pb-10'>
                 {
                     data.map(data => <PopularCard key={data.id} data={data}></PopularCard> )
                 }

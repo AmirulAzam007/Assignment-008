@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Navbar = () => {
     return (
@@ -10,28 +11,30 @@ const Navbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
         <li>
-          <a>Courses</a>
+          <Link href={"/"}>Home</Link>
         </li>
-        <li><a>My Profile</a></li>
+        <li>
+          <Link href={"/all-courses"}>Courses</Link>
+        </li>
+        <li>
+          <Link href={"/my-profile"}>My Profile</Link>
+        </li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">SkillSphere</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
       <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+        <Link href={"/"}>Home</Link>
       </li>
-      <li><a>Item 3</a></li>
+        <li>
+          <Link href={"/all-courses"}>Courses</Link>
+        </li>
+        <li>
+          <Link href={"/my-profile"}>My Profile</Link>
+        </li>
     </ul>
   </div>
   <div className="navbar-end">
