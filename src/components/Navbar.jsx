@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link href={"/all-courses"}>Courses</Link>
         </li>
         <li>
-          <Link href={"/my-profile"}>My Profile</Link>
+          <Link href={"/profile"}>My Profile</Link>
         </li>
       </ul>
     </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link href={"/all-courses"}>Courses</Link>
         </li>
         <li>
-          <Link href={"/my-profile"}>My Profile</Link>
+          <Link href={"/profile"}>My Profile</Link>
         </li>
     </ul>
   </div>
