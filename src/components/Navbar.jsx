@@ -37,7 +37,19 @@ const Navbar = () => {
         </li>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end pr-7">
+
+    <ul className="flex gap-3 ">
+
+      <li>
+        <Link href={"/signup"}>SignUp</Link>
+      </li>
+
+      <li>
+        <Link href={"/signin"}>SignIn</Link>
+      </li>
+
+    </ul>
     
   </div>
 </div>
