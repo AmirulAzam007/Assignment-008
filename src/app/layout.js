@@ -1,7 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -18,14 +18,14 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme= "light"
-      className={`${OutfitFont.className} h-full antialiased`}
+      className={`${OutfitFont.className} h-full antialiased`} 
     >
       <body>
-        <Navbar></Navbar>
-        <main className="max-w-7xl mx-auto">
+       
+        <main>
           {children}
         </main>
-        <Footer></Footer>
+        
         </body>
     </html>
   );

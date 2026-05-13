@@ -1,4 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
+import 'animate.css';
 
 
 const Banner = () => {
@@ -12,8 +13,9 @@ const Banner = () => {
        height="00"
     />
     <div>
+      
         <button className="btn text-purple-700 bg-gray-200 rounded-3xl">New: AI-Powered Courses Available</button>
-      <h1 className="text-7xl font-bold pt-2">Level Up Your Learning Journey</h1>
+      <h1 className="text-7xl font-bold pt-2 animate__animated animate__lightSpeedInRight">Level Up Your Learning Journey</h1>
       <p className="py-6">
         Access expert-led courses, practical resources, and skill-building tools—all in one place. <br /> Start learning smarter and achieve your goals faster.
       </p>

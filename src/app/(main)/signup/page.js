@@ -12,38 +12,65 @@ import {
   Link,
   TextField,
 } from "@heroui/react";
+import { useRouter } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
+import { toast } from "react-toastify";
 
-export default function SignInPage() {
+export default function SignUpPage() {
+
+    const router = useRouter()
 
   const onSubmit = async (a) => {
     a.preventDefault();
 
+    const name = a.target.name.value;
+    const image = a.target.image.value;
     const email = a.target.email.value;
     const password = a.target.password.value;
 
-    const { data, error } = await authClient.signIn.email({
+    const { data, error } = await authClient.signUp.email({
         email, 
-        password,
-        callbackURL: '/' 
+        password, 
+        name, 
+        image, 
     })
 
     console.log(data, error);
+
+    if(!error)
+    {
+        router.push('/signin')
+        
+    }
+    else{
+      toast.error("Error! Try again");
+    }
 
 
   };
 
   const handleGoogleSignIn = async () => {
-    await authClient.signIn.social({
-      provider: 'google'
-    })
-  }
+      await authClient.signIn.social({
+        provider: 'google'
+      })
+    }
 
   return (
     <Card className="border mx-auto w-125 py-10 my-8 shadow-2xl border-transparent">
-      <h1 className="text-center text-2xl font-bold">Sign In</h1>
+      <h1 className="text-center text-2xl font-bold">Registration</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+        <TextField isRequired name="name" type="text">
+          <Label>Name</Label>
+          <Input placeholder="Enter your name" />
+          <FieldError />
+        </TextField>
+
+        <TextField isRequired name="image" type="text">
+          <Label>Image URL</Label>
+          <Input placeholder="Image URL" />
+          <FieldError />
+        </TextField>
 
         <TextField
           isRequired
@@ -100,13 +127,13 @@ export default function SignInPage() {
         </div>
       </Form>
 
-      <div className="divider text-sm">OR</div>
-      <button onClick={handleGoogleSignIn} className="btn btn-outline btn-info rounded-2xl"><GrGoogle></GrGoogle> Sign In with Google</button>
+              <div className="divider text-sm">OR</div>
+            <button onClick={handleGoogleSignIn} className="btn btn-outline btn-info rounded-2xl"><GrGoogle></GrGoogle> Sign In with Google</button>
 
-      <div className="flex items-center justify-center gap-2">
-        <p className="text-gray-400">Don't have an account?</p>
-        <Link href="/signup">Register</Link>
-      </div>
+            <div className="flex items-center justify-center gap-2">
+                    <p className="text-gray-400">Already have an account?</p>
+                    <Link href="/signin">Log In</Link>
+                  </div>
     </Card>
   );
 }
