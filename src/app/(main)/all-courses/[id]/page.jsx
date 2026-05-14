@@ -16,14 +16,14 @@ const idpage = async ({params}) => {
 
 
     return (
-                <div className='my-10 flex gap-7 max-w-5xl ml-22 items-center border border-transparent shadow-2xl rounded-2xl justify-center py-8'>
+                <div className='my-20 flex gap-7 max-w-5xl ml-22 items-center border border-transparent shadow-2xl rounded-2xl justify-center py-15 px-15'>
                         <div className="">
                             <Image
                               src={data.image}
                                   alt={data.title}
 
-                                    height={500}
-                                     width={500}    
+                                    height={550}
+                                     width={550}    
                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                       
                                 className="rounded-xl object- border border-gray-200"
@@ -32,7 +32,7 @@ const idpage = async ({params}) => {
 
                          <div>
                             <div className='py-5'>
-                                <h1 className='text-lg font-bold'>{data.title}</h1>
+                                <h1 className='text-xl font-bold'>{data.title}</h1>
                                 <p className='text-sm'>{data.description}</p>
                             </div> 
 
