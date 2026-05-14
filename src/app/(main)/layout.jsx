@@ -8,7 +8,7 @@ export default function MainLayout({ children }) {
     <>
       <Navbar />
 
-      <main className="max-w-7xl mx-auto">
+      <main className=" flex-1 max-w-7xl mx-auto">
         {children}
         <ToastContainer />
       </main>
