@@ -1,37 +1,39 @@
 "use client";
-import React from 'react';
 import { useState } from "react";
+import PopularCard from "./PopularCard";
 
-const SearchCourses = ({data}) => {
-    
+const SearchCourses = ({ courses }) => {
+
     const [search, setSearch] = useState("");
 
-    const filteredCourses = data.filter(course =>
-    course.title.toLowerCase().includes(search.toLowerCase())
-  );
+    const filteredCourses = courses.filter(course =>
+        course.title.toLowerCase().includes(search.toLowerCase())
+    );
 
     return (
         <div>
-            <div>
-      <input
-        type="text"
-        placeholder="Search courses..."
-        className="input input-bordered w-full mb-6"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
 
-      {search && (<div className="grid md:grid-cols-3 gap-6">
-        {filteredCourses.map(course => (
-          <div key={course.id} className="card bg-base-100 shadow">
-            <div className="card-body">
-              <h2 className="card-title">{course.title}</h2>
-              <p>{course.description}</p>
+            <input
+                type="text"
+              placeholder="Search courses..."
+              className="input input-bordered w-full mb-6"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+            />
+
+            <div className="grid grid-cols-4 gap-5 pb-10">
+
+                {
+                    filteredCourses.map(course => (
+                      <PopularCard
+                            key={course.id}
+                         data={course}
+                        />
+                    ))
+                }
+
             </div>
-          </div>
-        ))}
-      </div>)}
-    </div>
+
         </div>
     );
 };

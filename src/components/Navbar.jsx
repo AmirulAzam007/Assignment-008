@@ -51,14 +51,14 @@ const Navbar = () => {
   </div>
   <div className="navbar-end pr-7">
 
-    { !user && <ul className="flex gap-3 ">
-
+    { !user && <ul className="menu menu-horizontal">
+     
       <li>
-        <Link href={"/signup"}>SignUp</Link>
+        <Link href={"/signup"}>Register</Link>
       </li>
 
       <li>
-        <Link href={"/signin"}>SignIn</Link>
+        <Link href={"/signin"}>Sign-In</Link>
       </li>
 
     </ul>}

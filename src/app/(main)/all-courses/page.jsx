@@ -8,6 +8,7 @@ const allcoursespage = async () => {
 
     const data = await res.json()
 
+    
 
 
 
@@ -15,15 +16,15 @@ const allcoursespage = async () => {
         <div>
             <h1 className="font-bold text-2xl m-4">All Courses</h1>
 
-            <SearchCourses data={data}></SearchCourses>
+            <SearchCourses courses={data}></SearchCourses>
 
             
 
-            <div className='grid grid-cols-4 gap-5 pb-10'>
+            {/* <div className='grid grid-cols-4 gap-5 pb-10'>
                 {
                     data.map(data => <PopularCard key={data.id} data={data}></PopularCard> )
                 }
-            </div>
+            </div> */}
         </div>
     );
 };
